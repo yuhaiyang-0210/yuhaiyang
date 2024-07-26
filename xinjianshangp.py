@@ -12,7 +12,7 @@ from selenium.webdriver.support import  expected_conditions as  EC
 driver = webdriver.Chrome()
 driver.get(url = "https://venus-testing.xintianweng.tech/")#浏览器输入链接
 driver.maximize_window()#最大化浏览器窗口
-driver.implicitly_wait(10)
+driver.implicitly_wait(5)
 driver.find_element(By.XPATH,'//*[@id="rc_select_0"]').send_keys('信天翁（上海）')
 driver.find_element(By.XPATH,'//*[@id="rc_select_0"]').send_keys(Keys.ENTER)
 time.sleep(2)
